@@ -1,0 +1,83 @@
+{
+  "access": [],
+  "components": [
+    {
+      "components": [
+        {
+          "name": "pageTitle",
+          "size": "H1",
+          "text": "Data Analysis",
+          "type": "heading"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-12",
+              "components": [
+                {
+                  "components": [
+                    {
+                      "components": [
+                        {
+                          "class": "col-md-8",
+                          "components": [
+                            {
+                              "content": "<wbr-pivot\n    #pivot1\n    (beforetoolbarcreated)=\"updateToolbar($event)\"\n    [toolbar]=\"true\"\n    [report]=\"pivotReport\"\n    [width]=\"'100%'\"\n    [height]=\"'586px'\"\n    [customizeCell]=\"onCustomizeCell\"\n    (ready)=\"onPivotReady($event)\"\n    (reportcomplete)=\"onReportComplete($event)\"\n    (cellclick)=\"onCellClick($event)\"\n    (celldoubleclick)=\"onCellDoubleClick($event)\">\n    Pivot table\n</wbr-pivot>",
+                              "name": "html0",
+                              "type": "html",
+                              "visible": "${showA}"
+                            }
+                          ],
+                          "name": "col1",
+                          "type": "col"
+                        },
+                        {
+                          "class": "col-md-4",
+                          "components": [
+                            {
+                              "content": "<div\n  id=\"googlechart-container\"\n  style=\"height:600px; width:100%;padding-top:10px;\">\n  Google chart\n</div>",
+                              "name": "html1",
+                              "type": "html",
+                              "visible": "${showA}"
+                            }
+                          ],
+                          "name": "col2",
+                          "type": "col"
+                        }
+                      ],
+                      "name": "row1",
+                      "type": "row"
+                    }
+                  ],
+                  "name": "card0",
+                  "type": "card",
+                  "visible": true
+                }
+              ],
+              "name": "col0",
+              "type": "col"
+            }
+          ],
+          "name": "row0",
+          "type": "row"
+        }
+      ],
+      "container": "main",
+      "type": "content"
+    }
+  ],
+  "events": {
+    "load": [
+      {
+        "code": "// in compile",
+        "type": "execute"
+      },
+      {
+        "name": "Sortimat.getVChartData",
+        "type": "invoke"
+      }
+    ]
+  },
+  "layout": "Main",
+  "name": "Data Analysis"
+}

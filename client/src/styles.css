@@ -1,0 +1,16 @@
+/*
+  You can add custom CSS rules or import files here.
+*/
+
+
+/* Import the Radzen CSS files */
+@import './styles-generated.css';
+
+@import '../node_modules/webdatarocks/webdatarocks.min.css';
+/* We will use the minified css at the end, doing development with normal css then will minify
+@import '../node_modules/webdatarocks/webdatarocks.min.css';
+*/
+
+.wdr-credits {
+  visibility: hidden !important;
+}

@@ -1,0 +1,39 @@
+<rz-content #content1 container="main">
+  <rz-heading #pageTitle size="H1" text="Data Analysis">
+  </rz-heading>
+  <div class="row">
+    <div class="col-md-12">
+      <rz-card #card0>
+        <div class="row">
+          <div class="col-md-8">
+            <rz-html #html0 *ngIf="showA">
+              <wbr-pivot
+                  #pivot1
+                  (beforetoolbarcreated)="updateToolbar($event)"
+                  [toolbar]="true"
+                  [report]="pivotReport"
+                  [width]="'100%'"
+                  [height]="'586px'"
+                  [customizeCell]="onCustomizeCell"
+                  (ready)="onPivotReady($event)"
+                  (reportcomplete)="onReportComplete($event)"
+                  (cellclick)="onCellClick($event)"
+                  (celldoubleclick)="onCellDoubleClick($event)">
+                  Pivot table
+              </wbr-pivot>
+            </rz-html>
+          </div>
+          <div class="col-md-4">
+            <rz-html #html1 *ngIf="showA">
+              <div
+                id="googlechart-container"
+                style="height:600px; width:100%;padding-top:10px;">
+                Google chart
+              </div>
+            </rz-html>
+          </div>
+        </div>
+      </rz-card>
+    </div>
+  </div>
+</rz-content>

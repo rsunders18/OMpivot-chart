@@ -1,0 +1,34 @@
+{
+  "dataSources": [
+    "Sortimat"
+  ],
+  "generator": "@radzen/angular-generator",
+  "https": false,
+  "ignore": [
+    "/client/src/tsconfig.json",
+    "/client/src/index.html",
+    "/client/app/app.module.ts",
+    "/client/src/app/app.component.html",
+    "/client/src/styles.css"
+  ],
+  "layouts": [
+    "Login",
+    "Main"
+  ],
+  "logo": "",
+  "name": "DataAnalysis",
+  "navigation": [
+    "Data Analysis"
+  ],
+  "pages": [
+    "Data Analysis"
+  ],
+  "port": 8000,
+  "serverLang": "cs",
+  "serverPort": 5000,
+  "serverProject": true,
+  "serverVersion": "3",
+  "startPage": "Data Analysis",
+  "theme": "software",
+  "themeSettings": null
+}
